@@ -27,6 +27,7 @@ const connect = function() {
   conn.on('connect',() => {
     conn.write("Name: ATM")
   });
+  return conn;
 }
 
 module.exports = {connect};
